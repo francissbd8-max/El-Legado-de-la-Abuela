@@ -14,22 +14,22 @@ export const RecipeForm: React.FC<RecipeFormProps> = ({ onSave, onCancel }) => {
   const [view, setView] = useState<'ai' | 'manual'>('ai');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const [formData, setFormData] = useState({
-    title: '',
-    author: '',
-    familyRole: 'Abuela',
-    origin: '',
-    category: 'Platos Principales',
-    difficulty: 'Media' as 'Fácil' | 'Media' | 'Dificil',
-    prepTime: '',
-    story: '',
-    culturalNote: '',
-    ancestralSecrets: ['', '', ''],
-    ingredients: [{ name: '', amount: '' }] as Ingredient[],
-    steps: [{ description: '', duration: '' }] as RecipeStep[],
-    imageUrl: '',
-    media: [] as RecipeMedia[],
-  });
+  //const [formData, setFormData] = useState({
+    //title: '',
+    //author: '',
+    //familyRole: 'Abuela',
+    //origin: '',
+    //category: 'Platos Principales',
+    //difficulty: 'Media' as 'Fácil' | 'Media' | 'Dificil',
+    //prepTime: '',
+    //story: '',
+    //culturalNote: '',
+    //ancestralSecrets: ['', '', ''],
+    //ingredients: [{ name: '', amount: '' }] as Ingredient[],
+    //steps: [{ description: '', duration: '' }] as RecipeStep[],
+    //imageUrl: '',
+    //media: [] as RecipeMedia[],
+  //});
 
   const handleAIHelp = async () => {
     if (!rawText.trim()) return;
