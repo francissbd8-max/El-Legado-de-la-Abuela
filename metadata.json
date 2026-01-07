@@ -1,0 +1,7 @@
+{
+  "name": "El Legado de la Abuela",
+  "description": "Una comunidad vibrante para preservar y compartir las recetas más icónicas de nuestras madres y abuelas, asegurando que el sabor de la familia nunca se olvide.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
