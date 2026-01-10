@@ -1,8 +1,8 @@
 const STRAPI_URL = "http://localhost:1337";
 
-export async function getRecetas() {
+export async function getReceta() {
   const res = await fetch(
-    `${STRAPI_URL}/api/recetas?filters[estado][$eq]=aprobada&populate=*`
+    `${STRAPI_URL}/api/receta?filters[Estado][$eq]=aprobada&populate=*`
   );
 
   if (!res.ok) {
