@@ -1,4 +1,4 @@
-const STRAPI_URL = "http://localhost:1337";
+const STRAPI_URL = "https://el-legado-de-la-abuela.onrender.com";
 
 export async function getReceta() {
   const res = await fetch(
