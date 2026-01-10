@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "recetas",
+  "info": {
+    "singularName": "receta",
+    "pluralName": "recetas",
+    "displayName": "Receta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "text",
+      "required": true
+    },
+    "Autor": {
+      "type": "text",
+      "required": true
+    },
+    "Region": {
+      "type": "text",
+      "required": true
+    },
+    "Categoria": {
+      "type": "text",
+      "required": true
+    },
+    "LaHistoria": {
+      "type": "text"
+    },
+    "Secretos": {
+      "type": "text"
+    },
+    "Ingredientes": {
+      "type": "text",
+      "required": true
+    },
+    "Pasos": {
+      "type": "text",
+      "required": true
+    },
+    "Dificultad": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Fácil",
+        "Media",
+        "Difícil"
+      ]
+    },
+    "Estado": {
+      "type": "enumeration",
+      "default": "pendiente",
+      "enum": [
+        "pendiente",
+        "aprobada"
+      ]
+    },
+    "Imagen": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "IdentificadorSEO": {
+      "type": "uid",
+      "targetField": "Titulo"
+    }
+  }
+}
