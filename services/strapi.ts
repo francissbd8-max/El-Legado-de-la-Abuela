@@ -11,7 +11,7 @@ export async function getReceta() {
 
   export async function crearReceta(receta: any) {
   const res = await fetch(
-    "https://legado-abuela-api.onrender.com/api/recetas",
+    "https://el-legado-de-la-abuela.onrender.com/api/recetas",
     {
       method: "POST",
       headers: {
