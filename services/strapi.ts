@@ -9,6 +9,30 @@ export async function getReceta() {
     throw new Error("Error cargando recetas");
   }
 
+  export async function crearReceta(receta: any) {
+  const res = await fetch(
+    "https://legado-abuela-api.onrender.com/api/recetas",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        data: {
+          ...receta,
+          Estado: "pendiente",
+        },
+      }),
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Error al crear receta");
+  }
+
+  return res.json();
+}
+
   const data = await res.json();
   return data.data;
 }
