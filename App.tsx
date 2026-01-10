@@ -720,4 +720,18 @@ const App: React.FC = () => {
   );
 };
 
+import Recetario from "./components/Recetario";
+
+function App() {
+  return (
+    <div>
+      <h1>El legado de la abuela</h1>
+      <Recetario />
+    </div>
+  );
+}
+
+export default App;
+
+
 export default App;
